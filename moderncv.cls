@@ -130,14 +130,7 @@
 \AtEndPreamble{
   \@ifpackageloaded{CJK}
     {\RequirePackage[CJKbookmarks]{hyperref}}
-    \ifpdf
     {\RequirePackage[pdftex]{hyperref}}
-\else
-\ifxetex
-\RequirePackage[xetex]{hyperref}
-\else
-\RequirePackage[dvips]{hyperref}
-\fi
   \AtBeginDocument{
     \hypersetup{
       breaklinks,
@@ -336,7 +329,7 @@
 % usage: \subsection{title}
 \newcommand*{\subsection}[1]{%
   \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
- 	  \raggedleft\hintfont{} &{\subsectionstyle{#1}}%
+     \raggedleft\hintfont{} &{\subsectionstyle{#1}}%
   \end{tabular}%
   \par\nobreak\vskip 0.5ex\@afterheading}% to avoid a pagebreak after the heading
 %  \phantomsection{}% reset the anchor for hyperrefs
