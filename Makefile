@@ -1,13 +1,13 @@
-default: wyx-cn.pdf wyx-en.pdf resume.pdf
+default: resume-cn.pdf resume-en.pdf
 
-resume.pdf: wyx-en.pdf
-	cp $^ resume.pdf
+#resume.pdf: wyx-en.pdf
+#	cp $^ resume.pdf
 
-wyx-cn.pdf: wyx-cn.tex
+resume-cn.pdf: resume-cn.tex
 	xelatex $^
 
-wyx-en.pdf: wyx-en.tex
+resume-en.pdf: resume-en.tex
 	xelatex $^
 
 clean:
-	rm -rf *.pdf
+	rm -rf *.pdf *.aux *.log *.out
