@@ -130,7 +130,14 @@
 \AtEndPreamble{
   \@ifpackageloaded{CJK}
     {\RequirePackage[CJKbookmarks]{hyperref}}
+    \ifpdf
     {\RequirePackage[pdftex]{hyperref}}
+\else
+\ifxetex
+\RequirePackage[xetex]{hyperref}
+\else
+\RequirePackage[dvips]{hyperref}
+\fi
   \AtBeginDocument{
     \hypersetup{
       breaklinks,
