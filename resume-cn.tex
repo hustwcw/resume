@@ -10,9 +10,11 @@
 %\setmainfont[Mapping=tex-text]{文泉驿正黑}
 
 % character encoding
-%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 \usepackage{CJKutf8}
-  
+%%\usepackage{xeCJK}
+%%\xeCJKsetup{AutoFakeBold=true, AutoFakeSlant=true}
+%%\setCJKmainfont{WenQuanYi Micro Hei}  
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
@@ -24,10 +26,13 @@
 % personal data
 \firstname{王成文}
 \familyname{}
-\title{}               % optional, remove the line if not wanted
+\title{个人简历}               % optional, remove the line if not wanted
 
+\address{浙江大学玉泉校区26舍106室}{310027, 浙江省杭州市}
 \mobile{18042306511}                    % optional, remove the line if not wanted
 \email{hustwcw@qq.com}                      % optional, remove the line if not wanted
+\photo[64pt]{photo.jpg}          % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
 %% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
 
 \nopagenumbers{}
@@ -41,12 +46,12 @@
 \cventry{2007--2011}{本科}{华中科技大学计算机科学与技术学院}{}{前10\%}{}  
 
 \section{专业技能}
-\cventry{编程语言}{熟练掌握C/C++, Objective-C, 对面向对象编程和设计模式有一定理解。熟悉Java, PHP 进行Web开发}{}{}{}{}
-\cventry{操作系统}{具备Linux, Mac, Windows三个平台下的开发经验}{}{}{}{}
-\cventry{项目工具}{熟悉在Linux开发环境，熟悉Vim, GCC, GDB等工具的使用和Shell, Makefile脚本编程，熟悉XCode, Visual Studio, Eclipse等IDE工具的使用}{}{}{}{}
-\cventry{开源项目}{leveldb源码阅读, libuv源码阅读并翻译文档}{}{}{}{}
-\cventry{应用开发}{一年半iOS, 半年Windows客户端开发经验, 半年Bada应用开发经验, 半年年PHP Web开发经验}{}{}{}{}
-\cventry{英语}{CET-6 587 分}{流利的英语读写能力，同时也是~uvbook~翻译者之一}{}{}{}
+\cvline{编程语言}{熟练掌握C/C++, Objective-C, 对面向对象编程和设计模式有一定理解。熟悉Java, PHP 进行Web开发}
+\cvline{操作系统}{具备Linux, Mac, Windows三个平台下的开发经验}
+\cvline{项目工具}{熟悉在Linux开发环境，熟悉Vim, GCC, GDB等工具的使用和Shell, Makefile脚本编程，熟悉XCode, Visual Studio, Eclipse等IDE工具的使用}
+\cvline{开源项目}{leveldb源码阅读, libuv源码阅读并翻译文档}
+\cvline{应用开发}{一年半iOS, 半年Windows客户端开发经验, 半年Bada应用开发经验, 半年年PHP Web开发经验}
+\cvline{英语}{CET-6 587 分, 流利的英语读写能力，同时也是~uvbook~翻译者之一}
 
 \section{社区}
 \cventry{Blog}{\url{techblog.sinaapp.com}}{技术博客}{}{}{}
@@ -56,69 +61,69 @@
 \section{项目经历}
 \renewcommand{\baselinestretch}{1.2}
 
-\cventry{2013.6~2013.8}
+\cventry{2013.6--2013.8}
 {RecSys Challenge 2013}
 {Collaborative Filtering, Matrix Factorization, Cold Start, Rating Prediction. }
 {科研项目}{}
 {RecSys Challenge 2013: Yelp business rating prediction比赛，毕业设计项目}
 
-\cventry{2013.4~2013.6}
+\cventry{2013.4--2013.6}
 {浙江大学苏州工业技术研究院室内定位项目}
 {iOS, C}
 {半科研项目}{}
 {主要负责该项目的iOS客户端开发及对室内定位模块进行安装调试，同时进行室内定位方向的研究工作。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2013.3~2013.4}
+\cventry{2013.3--2013.4}
 {JTang企业统一通信系统PC客户端}
 {Windows客户端}
 {公司项目}{}
 {参与该项目，负责通讯录相关模块的定制工作。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2012.10~2013.2}
+\cventry{2012.10--2013.2}
 {中国电信翼聊服务器网关}
 {Linux, C/C++, boost asio, zookeeper, sip, zlib, openssl, valgrind}
 {公司项目}{}
 {1. IP网段分类; 2. zookeeper C语言客户端实现; 3. 加密压缩程序库, 4. SIP网关项目。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2011.7~2012.10}
+\cventry{2011.7--2012.10}
 {中国电信翼聊iPhone客户端}
 {iOS, Objective-C, Git, Redmine}
 {公司项目}{}
 {主要开发者之一，参与了一年多来APP从1.0版本到3.0版本的升级。主要负责聊天模块、通讯录模块、微博小助手、群发小助手、网络收发、数据持久化等模块开发开发}
 
 \vspace*{0.2\baselineskip}
-\cventry{2011.3~2011.6}
+\cventry{2011.3--2011.6}
 {中国电信协同通信开放平台}
 {Java Web, SSH框架，PHP}
 {毕业设计项目}{}
 {主要负责开放平台通信接口的开发，Oauth 2.0 协议实现, 开放平台wiki网站搭建。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2010.9~2011.6}
+\cventry{2010.9--2011.6}
 {三星Bada手机应用开发}
 {Bada, C++}
 {独立项目}{}
 {参加第一届三星bada应用开发者大赛，现有5款bada应用在Samsung App Store可供下载。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2010.7~2010.9}
+\cventry{2010.7--2010.9}
 {桌面虚拟化项目}
 {GDI/GDI+, C, JavaScript}
 {科研项目}{}
 {将服务器端的程序界面发送到客户端浏览器中用JavaScript渲染，然后将客户端用户的操作事件发送到服务器端，由服务器端的应用程序处理，实现用户通过浏览器使用服务器程序的功能。我负责将GDI和GDI+的API翻译成JS的图形API。}
 
 \vspace*{0.2\baselineskip}
-\cventry{2009.6~2010.4}
+\cventry{2009.6--2010.4}
 {高校课程中心}
 {PHP, HTML, JavaScript}
 {科研项目}{}
 {主要负责网站的后台开发，经历了调研、需求、开发、测试等完整的项目流程。主要负责课程互动部分的开发，包括论坛、答疑、作业、和考试。在项目中学习了使用PHP进行动态网站开发，使用DIV+CSS进行网站前端开发。}
 
 \vspace*{0.2\baselineskip}
-\cventry{}
+\cventry{2009--2011}
 {MFC、QT编程}
 {MFC, QT}
 {课程项目}{}
@@ -127,11 +132,11 @@
 \renewcommand{\baselinestretch}{1.0}
 
 \section{奖项与荣誉}
-\cventry{2008, 2009, 2010}{人民奖学金}{}{}{}{}
-\cventry{2009, 2010}{校优秀学生干部}{}{}{}{}
+\cvline{2008, 2009, 2010}{人民奖学金}
+\cvline{2009, 2010}{校优秀学生干部}
 
 \section{自我评价}
-\cventry{}{专业基础扎实，没参加过ACM但喜欢A题，享受题目AC的快感。具备快速学习新技术的能力，对技术痴迷，遇到自己感兴趣的能够废寝忘食。项目经验丰富，具有很强的沟通能力和团队合作意思。对底层技术非常刚兴趣，喜欢面对挑战。}{}{}{}{}
+\cvline{}{专业基础扎实，没参加过ACM但喜欢A题，享受题目AC的快感。具备快速学习新技术的能力，对技术痴迷，遇到自己感兴趣的能够废寝忘食。项目经验丰富，具有很强的沟通能力和团队合作意思。对底层技术非常刚兴趣，喜欢面对挑战。}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
